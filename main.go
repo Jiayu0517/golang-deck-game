@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // import "fmt"
 
 // import "fmt"
@@ -33,9 +35,22 @@ func main() {
 	// greeting := "Hi there!"
 	// fmt.Println([]byte(greeting))
 
-	cards := newDeck()
-	cards.shuffle()
-	cards.print()
+	// cards := newDeck()
+	// cards.shuffle()
+	// cards.print()
+
+
+	nums := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	for i, num := range nums {
+		if num % 2 == 0 {
+			fmt.Printf("%v Even", i)
+			fmt.Println()
+		} else {
+			fmt.Printf("%v Odd", i)
+			fmt.Println()
+		}
+	}
 
 }
 
